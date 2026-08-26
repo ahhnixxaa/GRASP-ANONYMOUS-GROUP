@@ -1,158 +1,100 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #071a33;
-    color: white;
-}
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
-
-
-header {
-    background-color: #0b2d52;
-    text-align: center;
-    padding: 35px;
-}
-
-header h1 {
-    color: #4dc3ff;
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-header p {
-    color: #d9f3ff;
-    font-size: 18px;
-}
-
-
-
-
-nav {
-    background-color: #061426;
-    text-align: center;
-    padding: 15px;
-}
-
-nav a {
-    color: #4dc3ff;
+        body {
+            background: linear-gradient(135deg, #ffd6e7, #cce7ff);
+            color: #333;
+            min-height: 100vh;
+        }
+        
+        .logo{
+    color: rgb(255, 0, 204);
+    font-size: 24px;
+    font-weight: bold;
     text-decoration: none;
-    margin: 15px;
-    font-weight: bold;
+}
+ 
+.logo span{
+    color: rgb(76, 140, 224);
 }
 
-nav a:hover {
-    color: white;
-}
+        header {
+            background: #ff8fb8;
+            color: white;
+            padding: 20px;
+            text-align: l;
+        }
 
+        nav {
+            margin-top: 10px;
+        }
 
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
 
+        nav a:hover {
+            color: #d9f0ff;
+        }
 
-section {
-    padding: 40px 10%;
-}
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
 
-h2 {
-    color: #4dc3ff;
-    border-bottom: 2px solid #4dc3ff;
-    padding-bottom: 10px;
-}
+        .hero h1 {
+            color: #3578b8;
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
 
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
 
+        .button {
+            display: inline-block;
+            background: #5aa9e6;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
+        .button:hover {
+            background: #ff6fa5;
+        }
 
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
+        .card {
+            background: rgba(255, 255, 255, 0.8);
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto 50px;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
 
-.card {
-    background-color: #0d3158;
-    width: 250px;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px #00000055;
-}
+        .card h2 {
+            color: #e85d8c;
+            margin-bottom: 10px;
+        }
 
-.card h3 {
-    color: #63d5ff;
-}
+        footer {
+            background: #5aa9e6;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
 
-.card p {
-    line-height: 1.5;
-}
-
-
-
-
-.info-box {
-    background-color: #0b2442;
-    padding: 25px;
-    border-radius: 10px;
-    line-height: 1.7;
-}
-
-
-
-
-.safety-box {
-    background-color: #0d3158;
-    border-left: 5px solid #4dc3ff;
-    padding: 25px;
-    border-radius: 10px;
-}
-
-.safety-box li {
-    margin-bottom: 10px;
-}
-
-.warning {
-    color: #ffd166;
-    font-weight: bold;
-}
-
-
-.references {
-    background-color: #0b2442;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.references a {
-    color: #63d5ff;
-}
-
-.references a:hover {
-    color: white;
-}
-
-
-
-footer {
-    background-color: #030b16;
-    text-align: center;
-    padding: 20px;
-    color: #9cc7dc;
-}
-
-
-@media (max-width: 600px) {
-
-    header h1 {
-        font-size: 30px;
-    }
-
-    nav a {
-        display: block;
-        margin: 10px;
-    }
-
-    section {
-        padding: 25px;
-    }
-
-    .card {
-        width: 100%;
-    }
-}
+    
