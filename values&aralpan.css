@@ -390,7 +390,103 @@ nav a:hover {
 }
 
 
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
+        body {
+            background: linear-gradient(135deg, #ffd6e7, #cce7ff);
+            color: #333;
+            min-height: 100vh;
+        }
+        
+        .logo{
+    color: rgb(255, 0, 204);
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+ 
+.logo span{
+    color: rgb(76, 140, 224);
+}
 
-.examples-card {
-    padding
+        header {
+            background: #ff8fb8;
+            color: white;
+            padding: 20px;
+            text-align: l;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d9f0ff;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            color: #3578b8;
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #5aa9e6;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #ff6fa5;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.8);
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto 50px;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h2 {
+            color: #e85d8c;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #5aa9e6;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+    
