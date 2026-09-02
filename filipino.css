@@ -1,0 +1,638 @@
+/* ================================
+   GENERAL SETTINGS
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #2A4C7C;
+    color: white;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   HEADER / NAVIGATION
+================================ */
+
+header {
+    background: #1e385c;
+    padding: 18px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    color: #75AEE6;
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 9px 15px;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+header ul li a:hover {
+    background: #75AEE6;
+    color: #2A4C7C;
+}
+
+
+/* ================================
+   HERO SECTION
+================================ */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(
+        135deg,
+        #2A4C7C,
+        #345F91,
+        #2A4C7C
+    );
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 55px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #75AEE6;
+    display: block;
+}
+
+.hero p {
+    color: #e5f2ff;
+    font-size: 19px;
+    max-width: 750px;
+    margin: 0 auto 30px;
+}
+
+.hero .small-title {
+    color: #75AEE6;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+
+/* ================================
+   BUTTON
+================================ */
+
+.button {
+    display: inline-block;
+    background: #75AEE6;
+    color: #2A4C7C;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background: white;
+    color: #2A4C7C;
+    transform: translateY(-3px);
+}
+
+
+/* ================================
+   GENERAL SECTION SETTINGS
+================================ */
+
+.intro,
+.issues,
+.importance,
+.references {
+    width: 90%;
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 45px;
+    background: #345985;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.label {
+    color: #75AEE6 !important;
+    font-size: 13px !important;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px !important;
+}
+
+
+/* ================================
+   INTRODUCTION
+================================ */
+
+.intro {
+    text-align: center;
+}
+
+.intro h2 {
+    color: white;
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+.intro h2 em {
+    color: #75AEE6;
+}
+
+.intro p:not(.label) {
+    color: #f0f6fc;
+    font-size: 17px;
+    max-width: 900px;
+    margin: 15px auto;
+}
+
+.intro strong {
+    color: #75AEE6;
+}
+
+
+/* ================================
+   ISSUES SECTION
+================================ */
+
+.issues {
+    background: #2A4C7C;
+    box-shadow: none;
+    padding: 20px 0;
+}
+
+.issues > h2 {
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.issues > .label {
+    text-align: center;
+}
+
+
+/* ================================
+   CARDS
+================================ */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: #f4f9ff;
+    color: #2A4C7C;
+    padding: 30px;
+    border-radius: 18px;
+    border: 2px solid transparent;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    border-color: #75AEE6;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+    color: #2A4C7C;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #456789;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.card .icon {
+    width: 45px;
+    height: 5px;
+    background: #75AEE6;
+    border-radius: 10px;
+    margin-bottom: 18px;
+}
+
+
+/* ================================
+   QUOTE SECTION
+================================ */
+
+.quote {
+    width: 100%;
+    background: #1e385c;
+    padding: 80px 20px;
+    text-align: center;
+    margin: 70px 0;
+    border-top: 2px solid #75AEE6;
+    border-bottom: 2px solid #75AEE6;
+}
+
+.quote > div {
+    max-width: 850px;
+    margin: auto;
+}
+
+.quote p {
+    display: inline;
+    color: #eaf5ff;
+    font-size: 25px;
+    line-height: 1.7;
+}
+
+.quote em {
+    color: #75AEE6;
+}
+
+.quote-mark {
+    color: #75AEE6;
+    font-size: 60px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+
+/* ================================
+   IMPORTANCE SECTION
+================================ */
+
+.importance {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.importance-text h2 {
+    color: white;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.importance-text h2 em {
+    color: #75AEE6;
+}
+
+.importance-text p:not(.label) {
+    color: #edf5fc;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+
+/* ================================
+   JOSE RIZAL INFO BOX
+================================ */
+
+.info-box {
+    background: #f4f9ff;
+    color: #2A4C7C;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.2);
+}
+
+.info-box h3 {
+    color: #2A4C7C;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.info-box p {
+    color: #456789;
+    font-size: 15px;
+}
+
+.info-box em {
+    color: #2A4C7C;
+}
+
+.line {
+    width: 70%;
+    height: 2px;
+    background: #75AEE6;
+    margin: 20px auto;
+}
+
+
+/* ================================
+   REFERENCES
+================================ */
+
+.references h2 {
+    color: white;
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+.references ul {
+    padding-left: 25px;
+}
+
+.references li {
+    color: #edf5fc;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.references em {
+    color: #75AEE6;
+}
+
+.references strong {
+    color: #75AEE6;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    background: #1e385c;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 70px;
+    border-top: 2px solid #75AEE6;
+}
+
+footer h3 {
+    color: #75AEE6;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #e5f2ff;
+    margin: 5px;
+}
+
+footer .copyright {
+    color: #a9c7e5;
+    font-size: 13px;
+    margin-top: 18px;
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+
+    header {
+        padding: 15px 5%;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .importance {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* MOBILE PHONES */
+
+@media (max-width: 600px) {
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    header ul {
+        gap: 3px;
+    }
+
+    header ul li a {
+        font-size: 13px;
+        padding: 7px 9px;
+    }
+
+    .hero {
+        min-height: 550px;
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .intro,
+    .issues,
+    .importance,
+    .references {
+        width: 94%;
+        padding: 30px 20px;
+        margin: 35px auto;
+    }
+
+    .intro h2,
+    .issues > h2,
+    .importance-text h2,
+    .references h2 {
+        font-size: 27px;
+    }
+
+    .card {
+        padding: 23px;
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    .quote {
+        padding: 60px 20px;
+    }
+
+    .quote p {
+        font-size: 19px;
+    }
+
+    .quote-mark {
+        font-size: 45px;
+    }
+
+    .info-box {
+        padding: 25px;
+    }
+}
+
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ffd6e7, #cce7ff);
+            color: #333;
+            min-height: 100vh;
+        }
+        
+        .logo{
+    color: rgb(255, 0, 204);
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+ 
+.logo span{
+    color: rgb(76, 140, 224);
+}
+
+        header {
+            background: #ff8fb8;
+            color: white;
+            padding: 20px;
+            text-align: l;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d9f0ff;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            color: #3578b8;
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #5aa9e6;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #ff6fa5;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.8);
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto 50px;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h2 {
+            color: #e85d8c;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #5aa9e6;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+    
