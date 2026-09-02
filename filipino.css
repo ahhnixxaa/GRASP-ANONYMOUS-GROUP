@@ -1,6 +1,5 @@
-/* ================================
-   GENERAL SETTINGS
-================================ */
+
+
 
 * {
     margin: 0;
@@ -20,9 +19,7 @@ body {
 }
 
 
-/* ================================
-   HEADER / NAVIGATION
-================================ */
+
 
 header {
     background: #1e385c;
@@ -66,9 +63,6 @@ header ul li a:hover {
 }
 
 
-/* ================================
-   HERO SECTION
-================================ */
 
 .hero {
     min-height: 650px;
@@ -116,9 +110,6 @@ header ul li a:hover {
 }
 
 
-/* ================================
-   BUTTON
-================================ */
 
 .button {
     display: inline-block;
@@ -139,9 +130,8 @@ header ul li a:hover {
 }
 
 
-/* ================================
-   GENERAL SECTION SETTINGS
-================================ */
+
+
 
 .intro,
 .issues,
@@ -165,9 +155,7 @@ header ul li a:hover {
 }
 
 
-/* ================================
-   INTRODUCTION
-================================ */
+
 
 .intro {
     text-align: center;
@@ -195,9 +183,7 @@ header ul li a:hover {
 }
 
 
-/* ================================
-   ISSUES SECTION
-================================ */
+
 
 .issues {
     background: #2A4C7C;
@@ -216,10 +202,6 @@ header ul li a:hover {
     text-align: center;
 }
 
-
-/* ================================
-   CARDS
-================================ */
 
 .cards {
     display: grid;
@@ -264,9 +246,7 @@ header ul li a:hover {
 }
 
 
-/* ================================
-   QUOTE SECTION
-================================ */
+
 
 .quote {
     width: 100%;
@@ -302,9 +282,6 @@ header ul li a:hover {
 }
 
 
-/* ================================
-   IMPORTANCE SECTION
-================================ */
 
 .importance {
     display: grid;
@@ -330,9 +307,7 @@ header ul li a:hover {
 }
 
 
-/* ================================
-   JOSE RIZAL INFO BOX
-================================ */
+
 
 .info-box {
     background: #f4f9ff;
@@ -366,9 +341,6 @@ header ul li a:hover {
 }
 
 
-/* ================================
-   REFERENCES
-================================ */
 
 .references h2 {
     color: white;
@@ -424,12 +396,6 @@ footer .copyright {
     margin-top: 18px;
 }
 
-
-/* ================================
-   RESPONSIVE DESIGN
-================================ */
-
-/* TABLETS */
 
 @media (max-width: 900px) {
 
