@@ -1,0 +1,604 @@
+/* ==============================
+   GENERAL SETTINGS
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #2A4C7C;
+    color: white;
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   HEADER
+============================== */
+
+header {
+    background: #1e385c;
+    padding: 18px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* LOGO */
+
+.logo {
+    color: rgb(8, 8, 8);
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: #75AEE6;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+
+    padding: 8px 10px;
+    border-radius: 20px;
+
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    background: #75AEE6;
+    color: #2A4C7C;
+}
+
+
+/* ==============================
+   MAIN
+============================== */
+
+main {
+    min-height: 80vh;
+}
+
+
+/* ==============================
+   CREDITS SECTION
+============================== */
+
+.credits-section {
+    width: 90%;
+    max-width: 1100px;
+    margin: 70px auto;
+    text-align: center;
+}
+
+
+/* SMALL TITLE */
+
+.small-title {
+    color: #75AEE6;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+
+/* MAIN TITLE */
+
+.credits-section > h1 {
+    color: white;
+    font-size: 55px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.credits-section > h1 span {
+    color: #75AEE6;
+}
+
+
+/* INTRODUCTION */
+
+.intro {
+    max-width: 800px;
+    margin: 0 auto 50px;
+
+    color: #e5f2ff;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* ==============================
+   CREDIT CARDS
+============================== */
+
+.credit-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+
+    width: 100%;
+    margin: 30px auto;
+
+    padding: 35px;
+
+    background: #f4f9ff;
+    color: #2A4C7C;
+
+    border-radius: 20px;
+    border: 2px solid transparent;
+
+    text-align: left;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+
+    transition: 0.3s ease;
+}
+
+
+/* CARD HOVER */
+
+.credit-card:hover {
+    transform: translateY(-6px);
+    border-color: #75AEE6;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+/* FEATURED CARD */
+
+.credit-card.featured {
+    border: 2px solid #75AEE6;
+    background: #edf6ff;
+}
+
+
+/* ==============================
+   CREDIT ICON
+============================== */
+
+.credit-card .icon {
+    min-width: 60px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #75AEE6;
+    color: #2A4C7C;
+
+    border-radius: 50%;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ==============================
+   CREDIT CONTENT
+============================== */
+
+.credit-content {
+    flex: 1;
+}
+
+
+/* ROLE */
+
+.credit-content .role {
+    color: #75AEE6;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+
+/* NAME */
+
+.credit-content h2 {
+    color: #2A4C7C;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+
+/* PARAGRAPHS */
+
+.credit-content p:not(.role) {
+    color: #456789;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+
+/* BOLD TEXT */
+
+.credit-content strong {
+    color: #2A4C7C;
+}
+
+
+/* ==============================
+   THANK YOU SECTION
+============================== */
+
+.thank-you {
+    margin: 80px auto 20px;
+    padding: 45px 30px;
+
+    background: #1e385c;
+
+    border-radius: 25px;
+    border: 1px solid #75AEE6;
+
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+/* THANK YOU TITLE */
+
+.thank-you h2 {
+    color: #75AEE6;
+    font-size: 38px;
+    margin: 15px 0;
+}
+
+
+/* THANK YOU TEXT */
+
+.thank-you > p:not(.small-title) {
+    color: #e5f2ff;
+    font-size: 16px;
+}
+
+
+/* ==============================
+   THANK YOU CARDS
+============================== */
+
+/*
+   The existing HTML only has one .thank-you
+   section, so these styles create a card-like
+   appearance around the different content
+   inside the section.
+*/
+
+.thank-you .line {
+    width: 100px;
+    height: 2px;
+
+    background: #75AEE6;
+
+    margin: 20px auto;
+}
+
+
+/* ==============================
+   THANK YOU CARD STYLE
+============================== */
+
+/*
+   If you add individual elements with
+   class="thank-card" later, they will
+   automatically use this design.
+*/
+
+.thank-card {
+    background: #f4f9ff;
+    color: #2A4C7C;
+
+    padding: 30px;
+
+    border-radius: 18px;
+    border: 2px solid transparent;
+
+    text-align: left;
+
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.2);
+
+    transition: 0.3s ease;
+}
+
+.thank-card:hover {
+    transform: translateY(-7px);
+    border-color: #75AEE6;
+
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+}
+
+.thank-card h3 {
+    color: #2A4C7C;
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+.thank-card .thank-role {
+    color: #75AEE6;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+.thank-card p {
+    color: #456789;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer {
+    background: #1e385c;
+
+    text-align: center;
+
+    padding: 30px 20px;
+    margin-top: 70px;
+
+    border-top: 2px solid #75AEE6;
+}
+
+footer p {
+    color: #e5f2ff;
+    font-size: 14px;
+}
+
+
+/* ==============================
+   TABLET
+============================== */
+
+@media (max-width: 1000px) {
+
+    header {
+        flex-direction: column;
+        padding: 18px 5%;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 7px 9px;
+    }
+
+    .credits-section > h1 {
+        font-size: 45px;
+    }
+}
+
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 700px) {
+
+    header {
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 3px;
+    }
+
+    nav a {
+        font-size: 11px;
+        padding: 6px 7px;
+    }
+
+    .credits-section {
+        width: 94%;
+        margin: 50px auto;
+    }
+
+    .credits-section > h1 {
+        font-size: 36px;
+    }
+
+    .intro {
+        font-size: 15px;
+    }
+
+    /* Credit cards */
+
+    .credit-card {
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+
+        padding: 28px 22px;
+        gap: 20px;
+    }
+
+    .credit-content h2 {
+        font-size: 25px;
+    }
+
+    .credit-content p:not(.role) {
+        font-size: 14px;
+    }
+
+    /* Thank you */
+
+    .thank-you {
+        padding: 35px 20px;
+        margin-top: 55px;
+    }
+
+    .thank-you h2 {
+        font-size: 30px;
+    }
+
+    .thank-you > p:not(.small-title) {
+        font-size: 14px;
+    }
+
+    /* Thank-you cards */
+
+    .thank-card {
+        padding: 25px;
+    }
+
+    footer {
+        padding: 25px 15px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
+
+
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ffd6e7, #cce7ff);
+            color: #333;
+            min-height: 100vh;
+        }
+        
+        .logo{
+    color: rgb(255, 0, 204);
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+ 
+.logo span{
+    color: rgb(76, 140, 224);
+}
+
+        header {
+            background: #ff8fb8;
+            color: white;
+            padding: 20px;
+            text-align: l;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d9f0ff;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            color: #3578b8;
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #5aa9e6;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #ff6fa5;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.8);
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto 50px;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h2 {
+            color: #e85d8c;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #5aa9e6;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+    
