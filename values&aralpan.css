@@ -17,6 +17,9 @@ body {
 }
 
 
+/* =========================
+   NAVIGATION BAR
+========================= */
 
 .navbar {
     position: sticky;
@@ -61,7 +64,9 @@ nav a:hover {
 }
 
 
-
+/* =========================
+   INTRODUCTION
+========================= */
 
 .intro {
     min-height: 600px;
@@ -210,7 +215,9 @@ nav a:hover {
 }
 
 
-
+/* =========================
+   MAIN TOPIC SECTION
+========================= */
 
 .topic-section {
     padding: 100px 8%;
@@ -256,6 +263,9 @@ nav a:hover {
 }
 
 
+/* =========================
+   CHART CARD
+========================= */
 
 .chart-card {
     padding: 35px;
@@ -289,6 +299,9 @@ nav a:hover {
 }
 
 
+/* =========================
+   BAR CHART
+========================= */
 
 .chart {
     display: flex;
@@ -390,103 +403,205 @@ nav a:hover {
 }
 
 
- * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+/* =========================
+   MGA HALIMBAWA
+========================= */
 
-        body {
-            background: linear-gradient(135deg, #ffd6e7, #cce7ff);
-            color: #333;
-            min-height: 100vh;
-        }
-        
-        .logo{
-    color: rgb(255, 0, 204);
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-}
- 
-.logo span{
-    color: rgb(76, 140, 224);
+.examples-card {
+    padding: 35px;
+
+    background-color: #b7d7f8;
+
+    border-radius: 22px;
 }
 
-        header {
-            background: #ff8fb8;
-            color: white;
-            padding: 20px;
-            text-align: l;
-        }
+.examples-card .card-header {
+    margin-bottom: 20px;
+}
 
-        nav {
-            margin-top: 10px;
-        }
+.examples-card .card-header h3 {
+    color: #75AEE6;
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
+    font-size: 22px;
+}
 
-        nav a:hover {
-            color: #d9f0ff;
-        }
 
-        .hero {
-            text-align: center;
-            padding: 100px 20px;
-        }
+/* =========================
+   EXAMPLE ITEMS
+========================= */
 
-        .hero h1 {
-            color: #3578b8;
-            font-size: 50px;
-            margin-bottom: 15px;
-        }
+.example {
+    display: flex;
 
-        .hero p {
-            font-size: 20px;
-            margin-bottom: 25px;
-        }
+    gap: 18px;
 
-        .button {
-            display: inline-block;
-            background: #5aa9e6;
-            color: white;
-            padding: 12px 25px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    padding: 20px 0;
 
-        .button:hover {
-            background: #ff6fa5;
-        }
+    border-bottom: 1px solid #f4f7f4;
+}
 
-        .card {
-            background: rgba(255, 255, 255, 0.8);
-            width: 80%;
-            max-width: 600px;
-            margin: 0 auto 50px;
-            padding: 30px;
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-        }
+.example:last-child {
+    border-bottom: none;
+}
 
-        .card h2 {
-            color: #e85d8c;
-            margin-bottom: 10px;
-        }
+.number {
+    flex-shrink: 0;
 
-        footer {
-            background: #5aa9e6;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
+    width: 42px;
+    height: 42px;
 
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ffffff;
+
+    color: #75AEE6;
+
+    border-radius: 50%;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.example h4 {
+    color:#2A4C7c ;
+
+    margin-bottom: 5px;
+}
+
+.example p {
+    color:#414c57 ;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   IMPORTANCE SECTION
+========================= */
+
+.importance {
+    padding: 90px 8%;
+
+    background-color: #75AEE6;
+
+    color: #ffffff;
+
+    text-align: center;
+}
+
+.importance-content {
+    max-width: 800px;
+
+    margin: auto;
+}
+
+.importance .label {
+    color: #f6f7f6;
+}
+
+.importance h2 {
+    font-size: 36px;
+
+    line-height: 1.25;
+
+    margin-bottom: 20px;
+}
+
+.importance p:last-child {
+    color: #fcfefc;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 25px;
+
+    text-align: center;
+
+    background-color:#2A4C7c ;
+
+    color: #8e9298;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 900px) {
+
+    .intro {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .intro-text > p:not(.label) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .intro-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 18px 5%;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .logo {
+        font-size: 17px;
+    }
+
+    .intro {
+        padding: 60px 5%;
+    }
+
+    .topic-section {
+        padding: 70px 5%;
+    }
+
+    .chart-card,
+    .examples-card {
+        padding: 25px;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .importance {
+        padding: 70px 5%;
+    }
+
+    .importance h2 {
+        font-size: 29px;
+    }
+}
